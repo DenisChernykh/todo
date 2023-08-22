@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Todo-приложение</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<h1 class="header__title">ToDo list</h1>
+			<h3 class="header__subtitle"></h3>
+			<div class="card ">
+				<div class="card-header">Cписок задач на сегодня</div>
+				<div class="card-body">
+					<ul id="tasksList" class="list-group">
+						<!-- <li id="emptyList" class="list-group-item list-group-item_empty-list">
+								<picture><source srcset="img/list.webp" type="image/webp"><img src="img/list.png" alt="Empty" width="48" ></picture>
+								<div class="empty-list__title">Список дел пуст</div>
+							</li> -->
+						<!-- <li class="list-group-item">
+								<span class="task-title"> 1</span>
+								<div class="task-item__buttons">
+									<button type="button" data-action="done" class="btn-action">
+										<img src="img/tick.svg" alt="Done" width="18" height="18">
+									</button>
+									<button type="button" data-action="delete" class="btn-action">
+										<img src="img/cross.svg" alt="Delete" width="18" height="18">
+									</button>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<span class="task-title">2</span>
+								<div class="task-item__buttons">
+									<button type="button" data-action="done" class="btn-action">
+										<img src="img/tick.svg" alt="Done" width="18" height="18">
+									</button>
+									<button type="button" data-action="delete" class="btn-action">
+										<img src="img/cross.svg" alt="Delete" width="18" height="18">
+									</button>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<span class="task-title">3</span>
+								<div class="task-item__buttons">
+									<button type="button" data-action="done" class="btn-action">
+										<img src="img/tick.svg" alt="Done" width="18" height="18">
+									</button>
+									<button type="button" data-action="delete" class="btn-action">
+										<img src="img/cross.svg" alt="Delete" width="18" height="18">
+									</button>
+								</div>
+							</li> -->
+					</ul>
+				</div>
+			</div>
+			<div class="card ">
+				<div class="card-header">Добавить новую задачу</div>
+				<div class="card-body">
+					<form id="form">
+						<div class="form-group">
+							<input type="text" class="form-control" id="taskInput" placeholder="Текст задачи" required="" control-id="ControlID-1">
+							<small id="emailHelp" class="form-text text-muted">Что делаем, сколько времени тратим, какой результат
+								получаем.</small>
+						</div>
+						<button type="submit" class="btn btn-primary  btn-lg active" control-id="ControlID-2">Добавить</button>
+					</form>
+				</div>
+			</div>
+			<div class="card ">
+				<div data-spoller class="card-header card-header_add">Дополнительный функционал
+					<img class="arrow-img" src="img/arrow-bottom.svg" alt="">
+				</div>
+				<div class="card-body card-body_add">
+					<ul class="card-body__buttons">
+						<li class="card-body__button">
+							<button type="button" id="odd" class="btn btn_add"></button>
+							<p>Выделить четные</p>
+						</li>
+						<li class="card-body__button">
+							<button type="button" id="notOdd" class="btn btn_add"></button>
+							<p>Выделить нечетные</p>
+						</li>
+						<li class="card-body__button">
+							<button type="button" id="firstEl" class="btn btn_add"></button>
+							<p>Удалить первый элемент</p>
+						</li>
+						<li class="card-body__button">
+							<button type="button" id="lastEl" class="btn btn_add"></button>
+							<p>Удалить последний элемент</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<script src="./js/app.min.js"></script>
+</body>
+
+</html>
